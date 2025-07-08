@@ -1,2 +1,2 @@
-\# yolov5\_zybo\_capture\_inference
+# yolov5_zybo_capture_inference
 
