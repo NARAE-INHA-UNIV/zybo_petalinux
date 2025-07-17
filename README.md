@@ -2,7 +2,7 @@
 
 petalinux install & yolo
 
-## 폴더 구조
+## 프로젝트 구조
 
 ```bash
 ├─hw                # vivado
@@ -10,3 +10,7 @@ petalinux install & yolo
 │  └─petalinux      # petalinux hw에 관한 파일
 └─yolo              # yolo on petalinux
 ```
+
+## Preinstall
+
+- Viavdo 
