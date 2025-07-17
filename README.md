@@ -1,7 +1,15 @@
 # Zybo 7020 petalinux
 
+## Goal
 
-## 폴더 구조
+ZYNQ SoC를 기반으로 
+
+1. (PL) CSI Interface로 영상 입력
+2. (PL) YOLO
+3. (PL) Side Video compression (ex. H.254, H.265, VP9, **AV1**)
+4. (PS) USB Wi-Fi 동글을 통한 영상 전송
+
+## 프로젝트 구조
 
 ```bash
 ├─hw                # vivado
@@ -9,13 +17,6 @@
 │  └─petalinux      # petalinux hw에 관한 파일
 └─yolo              # yolo on petalinux
 ```
-## Goal : zybo z7-20 보드와 pcam 5c 카메라, yolov5 모델을 통한 구조자 객체 인식
-
-1. (PL) CSI Interface로 영상 입력
-2. (PL) YOLO
-3. (PL) Side Video compression (ex. H.254, H.265, VP9, **AV1**)
-4. (PS) USB Wi-Fi 동글을 통한 영상 전송
-
 
 ## Setting & installation
 
