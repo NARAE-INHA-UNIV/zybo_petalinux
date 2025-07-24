@@ -38,3 +38,27 @@ xsa 파일이 있는 경로를 입력한다.
 ```bash
 petalinux-config --get-hw-description ../
 ```
+
+### 2. 패키지 추가
+
+```bash
+petalinux-config -c rootfs
+```
+
+### 3. 빌드
+
+```bash
+petalinux-build
+```
+
+### 4. 부팅 이미지 생성
+
+```bash
+petalinux-package --boot --fsbl ./images/linux/zynq_fsbl.elf --fpga ./images/linux/system.bit --u-boot ./images/linux/u-boot.elf --force
+```
+
+### 5. SD카드용 이미지 생성
+
+```
+petalinux-package --wic --bootfiles "BOOT.BIN image.ub system.dtb boot.scr" --rootfs-file ./images/linux/rootfs.tar.gz
+```
